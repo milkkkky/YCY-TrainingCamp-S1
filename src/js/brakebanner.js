@@ -35,8 +35,6 @@ class BrakeBanner {
 		const bikeImage = new PIXI.Sprite(this.loader.resources["brake_bike.png"].texture)
 		bikeContainer.addChild(bikeImage);
 
-
-
 		const bikeLeverlImage = new PIXI.Sprite(this.loader.resources["brake_lever.png"].texture)
 		bikeContainer.addChild(bikeLeverlImage);
 		bikeLeverlImage.pivot.x = 455
@@ -136,7 +134,7 @@ class BrakeBanner {
 				pItem.gr.scale.x = 1
 
 
-				gsap.to(gr, { duration: .6, x: pItem.sx, y: pItem.sy, ease: 'elastice.out' })
+				gsap.to(pItem.gr, { duration: .6, x: pItem.sx, y: pItem.sy, ease: 'elastice.out' })
 
 			}
 		}
